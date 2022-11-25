@@ -14,13 +14,14 @@ struct Card: View {
             Image(quoteObject.Image)
                 .resizable()
                 .scaledToFill()
+                .colorMultiply(.gray)
                 .blur(radius: 1)
             VStack(alignment: .leading){
                 Text(quoteObject.Quotes).foregroundColor(.white).font(.title).fontWeight(.bold).multilineTextAlignment(.leading).lineLimit(4).frame(width: 330)
-                Text("-" + quoteObject.Author).foregroundColor(.white).font(.title2).multilineTextAlignment(.leading).frame(width: 330)
+                Text("-" + quoteObject.Author).foregroundColor(.white).font(.title2).multilineTextAlignment(.leading).frame(width: 330).padding(.top,10)
             }.padding()
                 
-        }.frame(width: 350, height: 380).cornerRadius(20)
+        }.frame(width: 350, height: 350).cornerRadius(20)
     }
 }
 

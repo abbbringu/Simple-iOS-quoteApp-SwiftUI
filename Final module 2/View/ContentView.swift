@@ -12,8 +12,11 @@ struct ContentView: View {
     var body: some View {
         NavigationView() {
             ScrollView{
+                
                 ForEach(quo.quoteArray){ q in
-                    Card(quoteObject: q)
+                    NavigationLink(destination: DetailedInformation(quoteData: q)) {
+                        Card(quoteObject: q)
+                    }
                 }.padding(.vertical)
             }.navigationBarTitle("Quotes")
         }
