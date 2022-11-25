@@ -11,6 +11,10 @@
 		D363D61C29300AED000DA0DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D363D61B29300AED000DA0DD /* ContentView.swift */; };
 		D363D61E29300AEE000DA0DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D363D61D29300AEE000DA0DD /* Assets.xcassets */; };
 		D363D62129300AEE000DA0DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D363D62029300AEE000DA0DD /* Preview Assets.xcassets */; };
+		D363D62C29300B55000DA0DD /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = D363D62B29300B55000DA0DD /* data.json */; };
+		D363D62E29300D5E000DA0DD /* quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = D363D62D29300D5E000DA0DD /* quote.swift */; };
+		D363D63029300E5A000DA0DD /* quoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D363D62F29300E5A000DA0DD /* quoteModel.swift */; };
+		D363D63429302790000DA0DD /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = D363D63329302790000DA0DD /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		D363D61B29300AED000DA0DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D363D61D29300AEE000DA0DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D363D62029300AEE000DA0DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D363D62B29300B55000DA0DD /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		D363D62D29300D5E000DA0DD /* quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quote.swift; sourceTree = "<group>"; };
+		D363D62F29300E5A000DA0DD /* quoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quoteModel.swift; sourceTree = "<group>"; };
+		D363D63329302790000DA0DD /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,11 @@
 		D363D61829300AED000DA0DD /* Final module 2 */ = {
 			isa = PBXGroup;
 			children = (
+				D363D62A29300B37000DA0DD /* Data */,
+				D363D62829300B00000DA0DD /* ViewModel */,
+				D363D62729300AF8000DA0DD /* model */,
+				D363D62929300B07000DA0DD /* View */,
 				D363D61929300AED000DA0DD /* Final_module_2App.swift */,
-				D363D61B29300AED000DA0DD /* ContentView.swift */,
 				D363D61D29300AEE000DA0DD /* Assets.xcassets */,
 				D363D61F29300AEE000DA0DD /* Preview Content */,
 			);
@@ -65,6 +76,39 @@
 				D363D62029300AEE000DA0DD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D363D62729300AF8000DA0DD /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D363D62D29300D5E000DA0DD /* quote.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		D363D62829300B00000DA0DD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D363D62F29300E5A000DA0DD /* quoteModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D363D62929300B07000DA0DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D363D61B29300AED000DA0DD /* ContentView.swift */,
+				D363D63329302790000DA0DD /* Card.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D363D62A29300B37000DA0DD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D363D62B29300B55000DA0DD /* data.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D363D62129300AEE000DA0DD /* Preview Assets.xcassets in Resources */,
+				D363D62C29300B55000DA0DD /* data.json in Resources */,
 				D363D61E29300AEE000DA0DD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +184,9 @@
 			files = (
 				D363D61C29300AED000DA0DD /* ContentView.swift in Sources */,
 				D363D61A29300AED000DA0DD /* Final_module_2App.swift in Sources */,
+				D363D63429302790000DA0DD /* Card.swift in Sources */,
+				D363D63029300E5A000DA0DD /* quoteModel.swift in Sources */,
+				D363D62E29300D5E000DA0DD /* quote.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

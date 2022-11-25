@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var quo = quoteModel()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView() {
+            ScrollView{
+                ForEach(quo.quoteArray){ q in
+                    Card(quoteObject: q)
+                }.padding(.vertical)
+            }.navigationBarTitle("Quotes")
         }
-        .padding()
     }
 }
 
