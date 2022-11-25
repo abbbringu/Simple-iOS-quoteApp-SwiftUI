@@ -28,7 +28,7 @@ struct DetailedInformation: View {
 
 struct DetailedInformation_Previews: PreviewProvider {
     static var previews: some View {
-        var quote = Quote(Quotes: "Quote", Author: "Brian Nguyen", DetailedInformation: "No detailed information here", Image: "pic2")
+        let quote = Quote(Quotes: "Quote", Author: "Brian Nguyen", DetailedInformation: "No detailed information here", Image: "pic2")
         DetailedInformation(quoteData: quote)
     }
 }
